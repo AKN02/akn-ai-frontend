@@ -1,0 +1,77 @@
+.version-history-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.versions-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+}
+
+.version-item {
+  background-color: #0a0e27;
+  border: 1px solid #d4a574;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.version-item:hover {
+  background-color: #1a2a4a;
+  box-shadow: 0 0 10px rgba(212, 165, 116, 0.3);
+}
+
+.version-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.version-number {
+  color: #d4a574;
+  font-weight: bold;
+}
+
+.version-time {
+  color: #5a5a7a;
+  font-size: 0.8rem;
+}
+
+.version-prompt {
+  color: #a0936b;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.load-btn {
+  padding: 5px 10px;
+  background-color: #2a3a5a;
+  border: 1px solid #4a6a9a;
+  color: #d4a574;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.load-btn:hover {
+  background-color: #4a6a9a;
+}
+
+.no-versions {
+  color: #5a5a7a;
+  text-align: center;
+  padding: 20px;
+}
